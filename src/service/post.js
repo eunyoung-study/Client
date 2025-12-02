@@ -35,6 +35,7 @@ export default class PostSerivce {
 
     getHeaders() {
         const token = this.tokenStorage.getToken();
+        console.log("token", token);
         return {
             Authorization: `Bearer ${token}`,
         };
