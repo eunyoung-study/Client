@@ -5,7 +5,6 @@ export default class HttpClient {
 
     // 서버와 통신하는 메서드
     async fetch(url, options) {
-        console.log(url);
         const res = await fetch(`${this.baseURL}${url}`, {
             ...options, // 요청 옵션을 펼쳐서 넣어줌
             headers: {
