@@ -12,8 +12,7 @@ const Login = ({ onSignUp, onLogin }) => {
     const [isAlert, setIsAlert] = useState(false);
 
     const onSubmit = (event) => {
-        event.preventDefalut();
-        console.log("이벼ㅛ");
+        event.preventDefault();
         if (signup) {
             onSignUp(userid, password, name, email, url).catch(setError);
         } else {
